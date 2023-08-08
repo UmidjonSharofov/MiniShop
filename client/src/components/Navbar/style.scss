@@ -1,12 +1,89 @@
-.container{
-   width: 100%;
-   background-color: #1D1D1D;
+.container {
+  width: 100%;
+  background-color: #1d1d1d;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.container .wrapper{
-    width: 100%;
-    max-width: 1400px;
+.container .wrapper {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 140px;
+  .icon {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px 140px;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    cursor: pointer;
+    span{
+        font-size: 18px;
+    }
+  }
+  .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-weight: 700;
+    a{
+      text-decoration: none;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 600;
+
+    }
+    .server{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1px;
+      flex-direction: column;
+      font-size: 17px;
+      font-weight: 400;
+      margin-top: 5px;
+      cursor: pointer;
+      .span{
+        font-size: 10px;
+      }
+    }
+  }
+  .Button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    .like{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+      cursor: pointer;
+    }
+    .button button{
+        padding: 10px 25px;
+        background:#2567C5;
+        border: none;
+        color: white;
+        border-radius: 10px;
+        font-size: 15px;
+      cursor: pointer;
+
+    }
+    svg{
+        font-size: 25px;
+    }
+  }
+}
+.wrapper .main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
 }
