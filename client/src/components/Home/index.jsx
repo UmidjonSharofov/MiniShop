@@ -6,6 +6,7 @@ const Home = () => {
         <div>
           <Search/>
           <Carousel/>
+         
         </div>
     )
 }

@@ -1,10 +1,11 @@
 import { Container } from "./style"
 
-const Button = ({onClick,children,wd,hd,FS}) => {
+// eslint-disable-next-line react/prop-types
+const Button = ({onClick,children,wd,hd,FS,br}) => {
     return (
         <div>
         
-    <Container className="container" onClick={onClick} FS={FS}   wd={wd} hd={hd} >{children||'Generic Button'}</Container>
+    <Container className="container" br={br} onClick={onClick} FS={FS}   wd={wd} hd={hd} >{children||'Generic Button'}</Container>
         </div>
     )
 }

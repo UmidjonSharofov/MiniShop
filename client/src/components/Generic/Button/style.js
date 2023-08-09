@@ -4,7 +4,6 @@ const Container = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 2px;
   min-width: 100px;
   color: #fff;
   font-weight: 400;
