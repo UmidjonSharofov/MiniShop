@@ -1,13 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;1,100;1,400;1,600;1,700&display=swap");
 @import "./variables.scss";
 @import url("../components/Navbar/style.scss");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;1,100;1,400;1,600;1,700&display=swap");
+@import url("../components/Home/Search/Search.scss");
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-bod {
+body {
   font-family: "Inter", sans-serif !important;
   font-family: "Montserrat", sans-serif !important ;
   background: #f5f5f7;

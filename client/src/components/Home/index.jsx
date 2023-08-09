@@ -1,7 +1,11 @@
+import Search from "./Search"
+import Carousel from "./carousel"
+
 const Home = () => {
     return (
         <div>
-          Home  
+          <Search/>
+          <Carousel/>
         </div>
     )
 }
