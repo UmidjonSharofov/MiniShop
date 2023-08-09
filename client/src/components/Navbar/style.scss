@@ -1,19 +1,23 @@
 .container {
   width: 100%;
-  background-color: #1d1d1d;
-  color: white;
-  font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.bg{
+  background-color: #1d1d1d;
+  color: white;
+  widows: 100%;
+  font-weight: 600;
+}
 .container .wrapper {
-  width: 100%;
+  
   max-width: 1400px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 140px;
+  padding: 15px 100px;
   .icon {
     display: flex;
     align-items: center;
@@ -57,23 +61,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 25px;
+    gap: 40px;
     .like{
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      gap: 10px;
+      gap: 8px;
       cursor: pointer;
     }
     .button button{
-        padding: 10px 25px;
-        background:#2567C5;
-        border: none;
-        color: white;
-        border-radius: 10px;
-        font-size: 15px;
-      cursor: pointer;
+      //   padding: 10px 25px;
+      //   background:#2567C5;
+      //   border: none;
+      //   color: white;
+      //   border-radius: 10px;
+      //   font-size: 15px;
+      // cursor: pointer;
 
     }
     svg{

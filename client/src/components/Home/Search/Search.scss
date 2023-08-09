@@ -1,0 +1,33 @@
+.SearchINp{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    position: relative;
+    input{
+        width: 60%;
+        height: 40px;
+        padding: 0 10px;
+        border-radius: 10px;
+        border: 1px solid #828080;
+        font-weight: 500;
+        font-size: 16px;
+        outline: none;
+    }
+    .SearchIcon{
+        position: absolute;
+        right: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #0066CC;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        svg{
+            color: #fff;
+            font-size: 20px;
+        }
+    }
+}
