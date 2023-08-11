@@ -8,6 +8,7 @@ import Like from '../components/Like'
 import Shop from '../components/Shop'
 import SingIn from '../components/SingIn'
 import Server from '../components/Server'
+import Product from '../components/product'
 
 const navbar =[
     { id: v4(), 
@@ -20,56 +21,63 @@ const navbar =[
      { id: v4(), 
         element: <Mac/>,
         title: "Mac",
-        path: "/mac",
+        path: "/product/mac",
         private:true,
         hidden:true
      },
      { id: v4(), 
         element: <Iphone/>,
         title: "Iphone",
-        path: "/iphone",
+        path: "/product/iphone",
         private:true,
         hidden:true
      },
      { id: v4(), 
         element: <Ipad/>,
         title: "Ipad",
-        path: "/ipad",
+        path: "/product/ipad",
         private:true,
         hidden:true
      },
      { id: v4(), 
         element: <Watch/>,
         title: "Watch",
-        path: "/watch",
+        path: "/product/watch",
         private:true,
         hidden:true
      },
      { id: v4(), 
         element: <Like/>,
         title: "Like",
-        path: "/like",
+        path: "/product/like",
         private:false,
         hidden:false
      },
      { id: v4(), 
         element: <Shop/>,
         title: "Shop",
-        path: "/shop",
+        path: "/product/shop",
         private:false,
         hidden:false
      },
      { id: v4(), 
         element: <SingIn/>,
         title: "SingIn",
-        path: "/singIn",
+        path: "/product/singIn",
         private:false,
         hidden:false
      },
      { id: v4(), 
       element: <Server/>,
       title: "Server",
-      path: "/server",
+      path: "/product/server",
+      private:false,
+      hidden:false
+   },
+   { id: v4(), 
+      element: <Product/>,
+      title: "Product",
+      path: "/product/:id",
       private:false,
       hidden:false
    },

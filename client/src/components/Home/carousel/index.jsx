@@ -20,7 +20,6 @@ const Carousel = () => {
       setData(res.data.banners)
     ))
   }, [])
-  console.log(data);
   return (
     <div className='carousel'>
       <div className='container'>

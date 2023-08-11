@@ -38,7 +38,7 @@ app.use('/api/category',category)
 app.use('/api/service',service)
 app.use('/api/user',user)
 app.use('/api/banners',banner)
-app.use('/api/login',login)
+app.use('/api/banners',login)
 
 app.get('/',(req,res)=>{
     res.send("hello")
