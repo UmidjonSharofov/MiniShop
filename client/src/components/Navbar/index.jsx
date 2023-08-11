@@ -30,21 +30,21 @@ const Navbar = () => {
                     <Link key={id} to={path}>{title}</Link>
                   ))
                 }
-                <div className='server' onClick={() => naviget('/server')}>
+                <div className='server' onClick={() => naviget('/product/server')}>
                   <span>Bro</span>
                   <span className='span'>Service</span>
                 </div>
               </div>
             </div>
             <div className="Button">
-              <div className="like" onClick={() => naviget('/like')}>
+              <div className="like" onClick={() => naviget('/product/like')}>
                 <AiOutlineHeart />
                 <h4>Sevimlilar</h4>
-              </div> <div className="like" onClick={() => naviget('/shop')}>
+              </div> <div className="like" onClick={() => naviget('/product/shop')}>
                 <GiShoppingCart />
                 <h4>Savatcha</h4>
               </div>
-              <div className="button" onClick={() => naviget('singIn')}>
+              <div className="button" onClick={() => naviget('/product/singIn')}>
                 <Button hd={40}>kirish</Button>
               </div>
             </div>
