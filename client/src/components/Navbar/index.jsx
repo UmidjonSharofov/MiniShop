@@ -3,6 +3,7 @@ import { GiShoppingCart } from 'react-icons/gi'
 import { Link, Outlet, useNavigate } from 'react-router-dom';
 import navbar from '../../utils';
 import Button from '../Generic/Button';
+import Footer from '../Footer';
 
 const Navbar = () => {
   const naviget = useNavigate()
@@ -52,6 +53,7 @@ const Navbar = () => {
         </div>
       </div>
       <Outlet />
+      <Footer/>
     </>
   )
 };
