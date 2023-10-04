@@ -1,5 +1,10 @@
+
 export const priceToString=(b)=>{
     let a=b.toString()
+    if(a.length==5){
+        let r=a.slice(0,3)+" "+a.slice(3,5)
+    return a=r
+    }
     if(a.length==6){
         let r=a.slice(0,3)+" "+a.slice(3,6)
     return a=r

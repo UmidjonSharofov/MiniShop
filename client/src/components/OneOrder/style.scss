@@ -1,0 +1,112 @@
+.order {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 15px;
+  background-color: #fff;
+  border-radius: 15px;
+  margin-top: 25px;
+  .order_title {
+    h1 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 36px;
+    }
+    p {
+      font-weight: 500;
+    }
+  }
+  .condition {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    h3 {
+      font-weight: 500;
+    }
+    p {
+      display: flex;
+      align-items: center;
+      background: #0066cc;
+      padding: 7px 12px;
+      font-size: 12px;
+      border-radius: 8px;
+      color: #fff;
+    }
+  }
+  .information {
+    display: flex;
+    width: 70%;
+    align-items: center;
+    justify-content: space-between;
+    .information_title {
+      h3 {
+        font-weight: 700;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      svg {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .table_div {
+    width: 75%;
+    padding: 20px 0;
+    table {
+      width: 100%;
+      border: 1px solid #d6d6d6;
+      width: 100%;
+      border-spacing: 0;
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+      thead {
+        border-color: inherit;
+        border-style: solid;
+        border-width: 0;
+        border-radius: 10px;
+        overflow: hidden;
+        th {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 1.5rem;
+          display: table-cell;
+          vertical-align: inherit;
+          border-bottom: 1px solid #d6d6d6;
+          text-align: left;
+          padding: 16px;
+          position: sticky;
+          top: 0;
+          z-index: 0;
+          background-color: white;
+          color: #000;
+          min-width: 170px;
+        }
+      }
+      td {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.43;
+        display: table-cell;
+        vertical-align: inherit;
+        border-bottom: 1px solid #d6d6d6;
+        text-align: left;
+        padding: 8px 16px;
+        color: #000;
+        max-height: 63px;
+        min-height: 63px;
+      }
+    }
+  }
+  .oreder_sm {
+    h3 {
+        font-weight: 500;
+        padding-bottom: 10px;
+    }
+    h2{
+        font-weight: 600;
+    }
+  }
+}

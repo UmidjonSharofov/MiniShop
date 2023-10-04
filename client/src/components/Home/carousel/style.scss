@@ -10,6 +10,7 @@
   .swiper-button-prev,
   .swiper-rtl .swiper-button-next {
     color: #606060;
+    left: -8px !important;
   }
   .swiper-button-prev:after,
   .swiper-button-next:after {
@@ -73,5 +74,27 @@
   }
   img {
     width: 80%;
+  }
+}
+@media (max-width: 932px) {
+  .Wrapper{
+    width: 100% !important;
+  }
+  
+  .carousel{
+    padding: 30px 0;
+    h2{
+      font-size: 30px !important;
+    }
+    p{
+      font-size: 20px !important;
+      font-weight: 600;
+    }
+  }
+
+}
+@media (max-width: 600px){
+  .main{
+    flex-direction: column;
   }
 }

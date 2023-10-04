@@ -1,0 +1,155 @@
+.Bg{
+  background: #fff !important;
+
+}
+.Mian {
+  width: 45%;
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
+    color: #606060;
+  }
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    color: #606060;
+  
+  }
+  
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    font-size: 40px !important;
+    font-weight: 800 ;
+  }
+  .swiper-pagination-bullet{
+    background: #fff;
+    width: 40px;
+    height: 4px;
+    border-radius: 20px;
+    
+  }
+  .Top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 70%;
+      padding: 25px;
+    }
+  }
+  .Botton {
+    opacity: 0.7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    img {
+      cursor: pointer;
+      max-width: 75%;
+
+      padding: 10px;
+    }
+  }
+  .mySwiper .swiper-slide-thumb-active {
+    opacity: 1 !important;
+    border-radius: 5px;
+    border: 1px solid black;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Border{
+    width: 100%;
+    padding: 20px;
+   
+  }
+  
+}
+.Text{
+  width: 100%;
+       display: flex;
+      padding:10px 0;
+       
+   
+    .p{
+      background-color: #fff;
+      display: inline-block;
+      padding-right: 6px;
+      word-break: break-all;
+      z-index: 2;
+      color: #999999;
+    }
+    .char{
+      max-height: 200px;
+      max-width: 200px;
+
+    }
+   }
+   .contaner{
+    h2{
+      font-size: 44px;
+      color: rgb(29, 29, 29);
+      font-weight: 600;
+      line-height: 1.2;
+      margin: 0px 0px 10px;
+      max-width: 350px;
+    }
+
+    .Titl{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .SVG{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+      .Export{
+          color: #0066CC !important;
+      }
+      svg{
+        font-size: 30px;
+        cursor: pointer;
+      }
+    }
+    .price{
+      margin-bottom: 25px;
+      h3{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 40px;
+      }
+      h4{
+        display: block;
+        font-size: 24px;
+        font-weight: 400;
+        text-decoration: line-through;
+      }
+    } 
+    .button{
+      padding: 20px 0;
+      display: flex;
+      button{
+        padding: 6px 30px;
+        font-size: 22px;
+        background: none;
+        border: 1px solid #D6D6D6;
+        transition: all 1s;
+        border-radius: 3px;
+        &:active{
+         transform:scale(1.1)  
+        }
+      }
+      div{
+        padding: 8px 40px;
+        border: 1px solid #D6D6D6;
+      }
+      
+    }
+    .Texnik{
+      font-size: 16px;
+    line-height: 1.5;
+    font-weight: 700;
+    }
+   }
