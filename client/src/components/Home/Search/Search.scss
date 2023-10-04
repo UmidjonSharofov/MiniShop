@@ -1,33 +1,82 @@
-.SearchINp{
-    width: 100%;
+.SearchINp {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  position: relative;
+  input {
+    width: 60%;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 10px;
+    border: 1px solid #828080;
+    font-weight: 500;
+    font-size: 16px;
+    outline: none;
+  }
+  .SearchIcon {
+    position: absolute;
+    right: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px 0;
-    position: relative;
-    input{
-        width: 60%;
-        height: 40px;
-        padding: 0 10px;
-        border-radius: 10px;
-        border: 1px solid #828080;
-        font-weight: 500;
-        font-size: 16px;
-        outline: none;
+    background: #0066cc;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    svg {
+      color: #fff;
+      font-size: 20px;
     }
-    .SearchIcon{
-        position: absolute;
-        right: 20%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: #0066CC;
-        padding: 10px;
-        border-radius: 10px;
-        cursor: pointer;
-        svg{
-            color: #fff;
-            font-size: 20px;
+  }
+}
+.Search_wrapper {
+  width: 100%;
+  height: 1000vh;
+  position: absolute;
+  color: #fff;
+  z-index: 999;
+  background-color: rgba(29, 29, 29, 0.95);
+  .search {
+    display: grid;
+    width: 100%;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    .search_map {
+      background: #fff;
+      border-radius: 8px;
+      padding: 10px 10px;
+      display: flex;
+      align-items: center;
+    }
+    .Link {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+
+      .img_div {
+        height: 60px;
+        width: 60px;
+        margin-right: 10px;
+        overflow: hidden;
+        img{
+            margin-top: 2px;
+            max-width: 100%;
+            max-height: 100%;
         }
+
+      }
+      .info_div{
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        p{
+            color: black;
+            font-size: 17px;
+        }
+      }
     }
+  }
 }

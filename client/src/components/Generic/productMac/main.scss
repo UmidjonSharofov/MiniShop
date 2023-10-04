@@ -1,0 +1,305 @@
+.Mac_Titile {
+  width: 100%;
+  padding: 20px 50px;
+  h2 {
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 42px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+}
+.mac {
+  width: 100%;
+}
+
+.MacWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  .macBorder {
+    position: relative;
+    padding: 25px;
+    border: 1px solid #d6d6d6;
+    display: flex;
+    align-items: center;
+  }
+  .macNew {
+    position: absolute;
+    display: flex;
+    left: 69.5%;
+    gap: 20px;
+  }
+  .saralash {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+      color: #6e6e73;
+      margin: 0 4px;
+    }
+    select {
+      font-size: 16px;
+      font-weight: 400;
+      outline: none;
+      border: none;
+      cursor: pointer;
+    }
+  }
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    .NoButton {
+      opacity: 0.5;
+    }
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px;
+      background-color: #fff;
+      outline: none;
+      border: none;
+      font-size: 30px;
+      cursor: pointer;
+      &:active {
+        opacity: 1;
+      }
+    }
+  }
+}
+.wrapper_mac {
+  max-width: 1400px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 100px;
+}
+.mac_Grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  .Mac {
+    border: 1px solid #d6d6d6;
+    width: 100%;
+
+    .Mac_Like {
+      width: 26px;
+      height: 25px;
+      position: relative;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 10px;
+      left: 90%;
+      background-color: #f4f4f4;
+      svg {
+        font-size: 20px;
+        cursor: pointer;
+      }
+    }
+    .Mac_Img {
+      height: 265px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 180px;
+      margin-top: 20px;
+      img {
+        transition: all 0.4s ease;
+        object-fit: contain;
+        padding: 20px;
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+    .Mac_titile {
+      text-align: center;
+
+      padding: 30px 40px;
+      p {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        color: rgba(0, 0, 0, 0.87);
+        margin: 0;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 25px;
+        overflow: hidden;
+        cursor: pointer;
+      }
+      h4 {
+        font-size: 21px;
+        font-weight: 700;
+        padding-bottom: 20px;
+      }
+    }
+
+    .Like_Button {
+      width: 100%;
+      padding: 0 20px;
+      padding-bottom: 40px;
+      button {
+        font-size: 18px;
+        font-weight: 500;
+        display: flex;
+        gap: 10px;
+      }
+    
+
+      .button_like {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        button {
+          padding: 4px 30px;
+          font-size: 22px;
+          background: none;
+          border: 1px solid #d6d6d6;
+          transition: all 1s;
+          border-radius: 3px;
+          &:active {
+            transform: scale(1.1);
+          }
+        }
+        div {
+          padding: 7px 40px;
+          border: 1px solid #d6d6d6;
+        }
+      }
+      &:hover {
+        img {
+          transform: scale(1.05);
+          cursor: pointer;
+        }
+        p {
+          color: #2567c5;
+        }
+      }
+    }
+  }
+}
+.mac_Flex {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .Mac {
+    padding: 50px 0;
+    border: 1px solid #d6d6d6;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+      .Mac_Like{
+        position: absolute;
+        width: 100%;
+        svg{
+          position: relative;
+          top:-170px;
+          left: 90%;
+          font-size: 20px;
+          cursor: pointer;
+        }
+      }
+    &:hover {
+      img {
+        transform: scale(1.05);
+        cursor: pointer;
+      }
+      p {
+        color: #2567c5;
+        cursor: pointer;
+      }
+    }
+  }
+  .Mac_Img {
+    height: 265px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 180px;
+    margin-top: 20px;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      cursor: pointer;
+    }
+  }
+  .Mac_titile {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    p {
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      color: rgba(0, 0, 0, 0.87);
+      margin: 0;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 25px;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    h4 {
+      font-size: 21px;
+      font-weight: 700;
+    }
+    .Like_Button {
+      width: 100%;
+      padding: 0 20px;
+      button {
+        font-size: 17px;
+        font-weight: 500;
+        display: flex;
+        gap: 10px;
+      }
+      .button_like {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+        button {
+          padding: 4px 30px;
+          font-size: 22px;
+          background: none;
+          border: 1px solid #d6d6d6;
+          transition: all 1s;
+          border-radius: 3px;
+          &:active {
+            transform: scale(1.1);
+          }
+        }
+        div {
+          padding: 7px 40px;
+          border: 1px solid #d6d6d6;
+        }
+      }
+  } 
+}
+
+}
+

@@ -1,11 +1,16 @@
-.Footer {
+.FooterWrapper {
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   border-top: 1px solid #d6d6d6;
   padding-top: 50px;
   padding-bottom: 20px;
+}
+.Footer {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 120px;
   .FooterLink {
     display: flex;
     flex-direction: column;

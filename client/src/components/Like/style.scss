@@ -1,0 +1,136 @@
+.Liki_Title{
+ display: flex;
+ margin-top: 20px;
+ align-items: center;
+ padding: 30px 160px;
+ border: 1px solid #d6d6d6;
+ box-shadow: 0px 0px 25px 2px #EFEFEF;
+ h1{
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 42px;
+  margin-bottom: 10px;
+  margin-top: 0;
+  color: #333;
+
+ }
+
+}
+.Like {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: start;
+  align-content: center;
+  padding: 50px 0;
+}
+.Like_wrapper {
+  width: 100%;
+  border: 1px solid #d6d6d6;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 25px 20px;
+  .Lile_like {
+    position: absolute;
+    z-index: 999;
+    svg {
+      top: -185px;
+      position: relative;
+      left: 230px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+  .Like_img {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    cursor: pointer;
+
+    img {
+      transition: all 0.8s;
+      max-width: 70%;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  .Like_title {
+    text-align: center;
+    transition: color 0.3s;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    color: rgba(0, 0, 0, 0.87);
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    overflow: hidden;
+    p {
+      cursor: pointer;
+      &:hover {
+        color: #2567c5;
+      }
+    }
+  }
+  .Like_Sum {
+    font-size: 21px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 20px;
+  }
+  .Like_Button {
+    button {
+      font-size: 18px;
+      font-weight: 500;
+      display: flex;
+      gap: 10px;
+    }
+  }
+  .button_like {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button {
+      padding: 4px 30px;
+      font-size: 22px;
+      background: none;
+      border: 1px solid #d6d6d6;
+      transition: all 1s;
+      border-radius: 3px;
+      &:active {
+        transform: scale(1.1);
+      }
+    }
+    div {
+      padding: 7px 40px;
+      border: 1px solid #d6d6d6;
+    }
+  }
+}
+.nooLike{
+  width: 100%;
+  padding:  200px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  h4{
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: 500;
+    color: #333;
+
+  }
+}

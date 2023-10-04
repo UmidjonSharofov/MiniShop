@@ -26,7 +26,6 @@ const GENRcCarousel = ({ title }) => {
     const mac = data?.slice(0, 4)
     const watch = data?.slice(4, 8)
     const link=title?.toLowerCase()
-    console.log(link);
 
 
 
@@ -54,7 +53,7 @@ const GENRcCarousel = ({ title }) => {
 
                         {
                             mac?.map(v => (
-                                <div key={v._id} className='main' onClick={() => navigaet(`/product/:${v._id}`)} >
+                                <div key={v._id} className='orde_main' onClick={() => navigaet(`/product/${v._id}`)} >
                                     <div className='min'>
                                         <div className='Img'>
                                             <img src={`http://localhost:5000/images/${v.images[0]}`} alt={v.title} />
@@ -66,7 +65,7 @@ const GENRcCarousel = ({ title }) => {
                                             <p>{`${priceToString(v.price)} so'm dan`}</p>
                                         </div>
                                         <div className='Button'>
-                                            <Button onClick={() => navigaet(`/product/:${v._id}`)} wd={200} hd={40}>Xarid qilish</Button>
+                                            <Button onClick={() => navigaet(`/product/${v._id}`)} wd={200} hd={40}>Xarid qilish</Button>
                                         </div>
                                     </div>
                                 </div>
@@ -80,7 +79,7 @@ const GENRcCarousel = ({ title }) => {
                     <SwiperSlide>
                         {
                             watch?.map(v => (
-                                <div key={v._id} className='main' >
+                                <div key={v._id} className='main' onClick={() => navigaet(`/product/${v._id}`)}>
                                     <div className='min'>
                                         <div className='Img'>
                                             <img src={`http://localhost:5000/images/${v.images[0]}`} alt={v.title} />
@@ -92,7 +91,7 @@ const GENRcCarousel = ({ title }) => {
                                             <p>{`${priceToString(v.price)} so'm dan`}</p>
                                         </div>
                                         <div className='Button'>
-                                            <Button onClick={() => navigaet(`/product/:${v._id}`)} wd={200} hd={40}>Xarid qilish</Button>
+                                            <Button onClick={() => navigaet(`/product/${v._id}`)} wd={200} hd={40}>Xarid qilish</Button>
 
                                         </div>
                                     </div>
@@ -103,7 +102,6 @@ const GENRcCarousel = ({ title }) => {
 
                         }
                     </SwiperSlide>
-
                 </Swiper>
             </div>
         </div>

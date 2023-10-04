@@ -1,5 +1,4 @@
 import { Link, useNavigate } from 'react-router-dom'
-import {IoLogoInstagram} from 'react-icons/io'
 import {FaFacebookSquare} from 'react-icons/fa'
 import {BiLogoTelegram} from 'react-icons/bi'
 import {BsYoutube} from 'react-icons/bs'
@@ -12,7 +11,7 @@ const Footer = () => {
     const navigate=useNavigate()
     return (
         <div className="container">
-            <div className="wrapper">
+            <div className="FooterWrapper">
                 <div className='Footer'>
                     <div className='FooterLink'>
                         <h6>Sotib olish</h6>

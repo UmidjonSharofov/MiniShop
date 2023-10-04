@@ -9,6 +9,11 @@ import Shop from '../components/Shop'
 import SingIn from '../components/SingIn'
 import Server from '../components/Server'
 import Product from '../components/product'
+import SingUp from '../components/SingUp'
+import Profil from '../components/Profil'
+import { Orders } from '../components/OrderHistory'
+import { Checkout } from '../components/checkout'
+import { OneOrder } from '../components/OneOrder'
 
 const navbar =[
     { id: v4(), 
@@ -78,6 +83,41 @@ const navbar =[
       element: <Product/>,
       title: "Product",
       path: "/product/:id",
+      private:false,
+      hidden:false
+   }, 
+   { id: v4(), 
+      element: <SingUp/>,
+      title: "SingUP",
+      path: "/product/SingUp",
+      private:false,
+      hidden:false
+   },
+   { id: v4(), 
+      element: <Profil/>,
+      title: "Profil",
+      path: "/profil",
+      private:false,
+      hidden:false
+   },
+   { id: v4(), 
+      element: <Orders/>,
+      title: "orders",
+      path: "/orders",
+      private:false,
+      hidden:false
+   },
+   { id: v4(), 
+      element: <OneOrder/>,
+      title: "orders",
+      path: "/orders/:id",
+      private:false,
+      hidden:false
+   },
+   { id: v4(), 
+      element: <Checkout/>,
+      title: "checkout",
+      path: "/checkout",
       private:false,
       hidden:false
    },
