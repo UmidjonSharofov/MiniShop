@@ -91,7 +91,7 @@ const SingUp = () => {
                         <p>{eror?.ConfirimPasword}</p>
 
                         <div>
-                            <Button onClick={submit} hd={48} wd={380}></Button>
+                            <Button onClick={submit} hd={48} wd={380}>Ro'yxatdan o'tish</Button>
                            <ToastContainer />
                         </div>
                         <Link to={'/product/singIn'} className='Link'>{`Accountingiz bormi? Kirish`}</Link>

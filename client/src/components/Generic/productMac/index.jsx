@@ -47,10 +47,12 @@ const ProductsMac = ({ sameObj }) => {
     return (
         <div className="container">
             <div className="mac">
-                <div className="wrapper">
-                    <div className="Mac_Titile">
-                        <h2>{sameObj.title}</h2>
-                        <p>{sameObj.desc}</p>
+                <div className="max_width">
+                    <div className="wrapper">
+                        <div className="Mac_Titile">
+                            <h2>{sameObj.title}</h2>
+                            <p>{sameObj.desc}</p>
+                        </div>
                     </div>
                 </div>
                 <div className="Bg">
@@ -107,11 +109,11 @@ const ProductsMac = ({ sameObj }) => {
                                                 </div>
                                                 <div className="Like_Button">
 
-                                                {
-                                                    itme?.includes(v._id) ? <div className='button_like'>
-                                                        <button onClick={() => dispatch(decrement(v))}>-</button><div>{quantity(v._id)}</div><button onClick={() => dispatch(increment(v))}>+</button>
-                                                    </div> : <Button onClick={() => dispatch(addItem(v))}> <PiShoppingCart /> Savatchaga</Button>
-                                                }
+                                                    {
+                                                        itme?.includes(v._id) ? <div className='button_like'>
+                                                            <button onClick={() => dispatch(decrement(v))}>-</button><div>{quantity(v._id)}</div><button onClick={() => dispatch(increment(v))}>+</button>
+                                                        </div> : <Button onClick={() => dispatch(addItem(v))}> <PiShoppingCart /> Savatchaga</Button>
+                                                    }
                                                 </div>
                                             </div>
                                         </div>
