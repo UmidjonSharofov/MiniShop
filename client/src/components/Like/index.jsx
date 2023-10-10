@@ -21,43 +21,48 @@ const Like = () => {
   return (
     <div className='Bg'>
       <div className='Liki_Title'>
-        <h1>Sizning sevimli tovarlaringiz</h1>
+        <div className='container'>
+          <div className='wrapper'>
+            <h1>Sizning  sevimli tovarlaringiz</h1>
+          </div>
+
+        </div>
       </div>
       <div className='container'>
         <div className='wrapper'>
           {
-            like.length>0?
+            like.length > 0 ?
 
-            <div className='Like'>
-              {
-                like?.map(v => (
-                  <div className='Like_wrapper' key={v._id}>
-                    <div className='Lile_like'>
-                      <FcLike onClick={() => dispatch(removeItem(v))} />
+              <div className='Like'>
+                {
+                  like?.map(v => (
+                    <div className='Like_wrapper' key={v._id}>
+                      <div className='Lile_like'>
+                        <FcLike onClick={() => dispatch(removeItem(v))} />
+                      </div>
+                      <div className='Like_img' onClick={() => navgete(`/product/${v._id}`)}>
+                        <img src={`http://localhost:5000/images/${v.images[0]}`} alt='img' />
+                      </div>
+                      <div className='Like_title'>
+                        <p onClick={() => navgete(`/product/${v._id}`)}>{v.title}</p>
+                      </div>
+                      <div className='Like_Sum'>
+                        <h4>{priceToString(v.price)} so'm dan</h4>
+                      </div>
+                      <div className='Like_Button'>
+                        {
+                          itme?.includes(v._id) ? <div className='button_like'>
+                            <button onClick={() => dispatch(decrement(v))}>-</button><div>{quantity(v._id)}</div><button onClick={() => dispatch(increment(v))}>+</button>
+                          </div> : <Button onClick={() => dispatch(addItem(v))}> <PiShoppingCart /> Savatchaga</Button>
+                        }
+                      </div>
                     </div>
-                    <div className='Like_img' onClick={() => navgete(`/product/${v._id}`)}>
-                      <img src={`http://localhost:5000/images/${v.images[0]}`} alt='img' />
-                    </div>
-                    <div className='Like_title'>
-                      <p onClick={() => navgete(`/product/${v._id}`)}>{v.title}</p>
-                    </div>
-                    <div className='Like_Sum'>
-                      <h4>{priceToString(v.price)} so'm dan</h4>
-                    </div>
-                    <div className='Like_Button'>
-                      {
-                        itme?.includes(v._id) ? <div className='button_like'>
-                          <button onClick={() => dispatch(decrement(v))}>-</button><div>{quantity(v._id)}</div><button onClick={() => dispatch(increment(v))}>+</button>
-                        </div> : <Button onClick={() => dispatch(addItem(v))}> <PiShoppingCart /> Savatchaga</Button>
-                      }
-                    </div>
-                  </div>
-                ))
-              }
-            </div>:<div className='nooLike'>
-              <h4>Hozircha sizda sevimli tovorlar yo'q</h4>
-              <Button onClick={()=>navgete('/')} wd={200}>Asosiy bo'limga o'tish</Button>
-            </div>
+                  ))
+                }
+              </div> : <div className='nooLike'>
+                <h4>Hozircha sizda sevimli tovorlar yo'q</h4>
+                <Button onClick={() => navgete('/')} wd={200}>Asosiy bo'limga o'tish</Button>
+              </div>
           }
         </div>
       </div>
